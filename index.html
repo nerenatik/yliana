@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>С 8 Марта! 🕺</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #FFD700, #FF6B6B, #4B0082);
+            font-family: 'Comic Sans MS', cursive;
+            text-align: center;
+            padding: 40px;
+            min-height: 100vh;
+            color: #fff;
+            animation: disco 5s infinite;
+        }
+        @keyframes disco {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+        }
+        .photo {
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 5px solid #fff;
+            box-shadow: 0 0 30px #FFD700;
+            transition: transform 0.3s;
+        }
+        .photo:hover { transform: rotate(5deg) scale(1.05); }
+        h1 { 
+            font-size: 2.5em; 
+            text-shadow: 0 0 15px #4B0082;
+            margin: 20px 0;
+        }
+        .dancer { 
+            font-size: 50px; 
+            animation: dance 1s infinite;
+        }
+        @keyframes dance {
+            0%, 100% { transform: rotate(0); }
+            50% { transform: rotate(10deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo">
+            <img src="photo_2024-10-14_22-08-11.jpg" alt="Танцуем вместе!">
+        </div>
+        <h1>🎉 С 8 Марта! Пусть жизнь будет в ритме диско! 🎉</h1>
+        <div class="dancer">💃🕺✨</div>
+        <iframe style="border-radius:12px; margin-top: 30px;" 
+                src="https://open.spotify.com/embed/track/1WkMMavIMc4JZ8cfMmxHkI" 
+                width="100%" 
+                height="352" 
+                frameborder="0">
+        </iframe>
+    </div>
+</body>
+</html>
